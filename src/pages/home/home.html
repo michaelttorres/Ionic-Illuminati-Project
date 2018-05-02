@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+        The Illuminati
+    </ion-title>
+    
+  </ion-navbar>
+  
+  </ion-header>
+
+<ion-content padding>
+
+  <img src="assets/imgs/illuminati.png" height="180px" width="180px"/>
+
+  <ion-card>
+    <ion-card-content>
+      <ion-card-title>
+        Welcome
+        </ion-card-title>
+        <ion-item>
+          <ion-label stacked>Username</ion-label>
+          <ion-input type="text" [(ngModel)]="username"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label stacked>Password</ion-label>
+          <ion-input type="text" [(ngModel)]="password"></ion-input>
+        </ion-item>
+        <p>
+          <button ion-button color="secondary" full (click)="goToWelcome()">Welcome to the Illuminati</button>
+        </p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
